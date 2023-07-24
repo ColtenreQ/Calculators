@@ -101,7 +101,7 @@ button:hover {
 }
 
 
-@media(max-width: 900px) {
+@media(max-width: 750px) {
   body {
     display: flex;
     flex-wrap: wrap;
