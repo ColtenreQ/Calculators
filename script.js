@@ -27,7 +27,9 @@
   });
 
   clearInput.addEventListener("click", () => {
-    calcInput.value = "";
+    if(calcInput.value != "") {
+      calcInput.value = "";
+    }
   });
 
   let solve = (array, type) => {
