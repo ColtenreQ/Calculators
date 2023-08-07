@@ -6,6 +6,7 @@
   let calcButton = document.querySelector(".calcButton");
   let integrateButton = document.querySelector(".integrateButton");
   let calcInput = document.querySelector(".calcInput");
+  let clearInput = document.querySelector(".clear");
 
   calcButton.addEventListener("click", () => {
     let inputString = calcInput.value;
@@ -23,6 +24,10 @@
     let solution = solve(problem, integrate).join("");
     console.log("This is the solution " + solution);
     calcInput.value = solution;
+  });
+
+  clearInput.addEventListener("click", () => {
+    calcInput.value = "";
   });
 
   let solve = (array, type) => {
